@@ -6,6 +6,11 @@
 /* ----- Bootstrap style sheet */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+/* ----- Styling dropdown link text color */
+#navbarScrollingDropdown {
+  color: rgba(176, 196, 222);
+}
+
 /* Light & Dark Color Palette */
 
 .light {
