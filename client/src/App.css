@@ -1,0 +1,23 @@
+/* Light & Dark Color Palette */
+
+.light {
+  --background-color: 240, 248, 255; /* Alice Blue */
+  --border-color: 230, 230, 250; /* Lavender Mist */
+  --card-color: 219, 233, 244; /* Azureish White */
+  --copy-primary-color: 176, 196, 222; /* Light Steel Blue */
+  --copy-secondary-color: 188, 212, 230; /* Beau Blue */
+  --cta-color: 176, 224, 230; /* Powder Blue */
+  --cta-active-color: 224, 255, 255; /* Light Cyan */
+  --cta-text-color: 204, 204, 255; /* Lavender Blue */
+}
+
+.dark {
+  --background-color: 30, 30, 30; /* Dark background */
+  --border-color: 45, 45, 45; /* Darker border */
+  --card-color: 50, 50, 50; /* Dark card background */
+  --copy-primary-color: 176, 196, 222; /* Light Steel Blue for text */
+  --copy-secondary-color: 188, 212, 230; /* Beau Blue for secondary text */
+  --cta-color: 70, 130, 180; /* Steel Blue for CTA */
+  --cta-active-color: 100, 149, 237; /* Cornflower Blue for active CTA */
+  --cta-text-color: 240, 248, 255; /* Alice Blue for CTA text */
+}
