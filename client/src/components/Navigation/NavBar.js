@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // ---- React bootstrap imports
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -9,21 +9,21 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+    <Navbar expand="lg">
+      <Container fluid className="flex justify-between items-center">
+        <Navbar.Brand href="#" className="text-copyPrimary">Notes App</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="#action1" className="text-copyPrimary">Home</Nav.Link>
+            <Nav.Link href="#action2" className="text-copyPrimary">Link</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="#action3" className="text-copyPrimary">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4" className="text-copyPrimary">
                 Another action
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -48,6 +48,6 @@ const NavBar = () => {
       </Container>
     </Navbar>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
