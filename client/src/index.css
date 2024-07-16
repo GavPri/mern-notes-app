@@ -11,6 +11,10 @@
   color: rgba(176, 196, 222);
 }
 
+#navbarScrollingDropdown:hover {
+  color: rgba(188,212,230);
+}
+
 /* Light & Dark Color Palette */
 
 .light {
