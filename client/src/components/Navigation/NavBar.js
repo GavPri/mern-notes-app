@@ -38,19 +38,6 @@ const NavBar = () => {
               >
                 Action
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#action4"
-                className="text-copyPrimary hover:text-copySecondary"
-              >
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item
-                href="#action5"
-                className="text-copyPrimary hover:text-copySecondary"
-              >
-                Something else here
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
