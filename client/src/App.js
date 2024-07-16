@@ -1,7 +1,12 @@
 import "./App.css";
 
 function App() {
-  return <h1 className="text-3xl">Notes App</h1>;
+  return (
+    <div id="root" className="min-h-screen min-w-screen light bg-background">
+      {" "}
+      <p className="text-2xl text-copySecondary">Hello</p>
+    </div>
+  );
 }
 
 export default App;
