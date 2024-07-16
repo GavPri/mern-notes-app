@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ----- Bootstrap style sheet */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 /* Light & Dark Color Palette */
 
 .light {
