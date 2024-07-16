@@ -6,6 +6,8 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+// ---- Icons import
+import { CiSun } from "react-icons/ci";
 
 const NavBar = () => {
   return (
@@ -32,11 +34,10 @@ const NavBar = () => {
               id="navbarScrollingDropdown"
               className="text-copyPrimary"
             >
-              <NavDropdown.Item
-                href="#action3"
-                className="text-copyPrimary hover:text-copySecondary"
-              >
-                Action
+              <NavDropdown.Item href="#action3">
+                <Button className="flex items-center justify-center h-[3/4] w-full">
+                  <CiSun size={40}/>
+                </Button>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
