@@ -8,6 +8,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 // ---- Icons import
 import { CiSun } from "react-icons/ci";
+// Router imports
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -22,16 +24,28 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="me-auto my-2 my-lg-0 flex justify-between items-center"
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link
-              href="#action1"
-              className="text-copyPrimary hover:text-copySecondary"
+            <Link
+              to="/"
+              className="text-copyPrimary hover:text-copySecondary mx-2"
             >
               Home
-            </Nav.Link>
+            </Link>
+            <Link
+              to="signup"
+              className="text-copyPrimary hover:text-copySecondary mx-2"
+            >
+              SignUp
+            </Link>
+            <Link
+              to="signin"
+              className="text-copyPrimary hover:text-copySecondary mx-2"
+            >
+              Sign In
+            </Link>
             <NavDropdown
               title="Theme"
               id="navbarScrollingDropdown"
