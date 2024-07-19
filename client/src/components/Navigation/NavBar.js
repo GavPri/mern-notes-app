@@ -11,6 +11,30 @@ import { CiSun } from "react-icons/ci";
 // Router imports
 import { Link } from "react-router-dom";
 
+const NavLinks = () => {
+  return (
+    <>
+      <Link
+        to="/"
+        className="text-copyPrimary hover:text-copySecondary lg:mx-2 w-screen py-2 px-2 tracking-wider"
+      >
+        Home
+      </Link>
+      <Link
+        to="signup"
+        className="text-copyPrimary hover:text-copySecondary lg:mx-2 w-screen py-2 px-2 tracking-wider"
+      >
+        Sign Up
+      </Link>
+      <Link
+        to="signin"
+        className="text-copyPrimary hover:text-copySecondary lg:mx-2 w-screen py-2 px-2 tracking-wider"
+      >
+        Sign In
+      </Link>
+    </>
+  );
+};
 const NavBar = () => {
   return (
     <Navbar
@@ -28,24 +52,7 @@ const NavBar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link
-              to="/"
-              className="text-copyPrimary hover:text-copySecondary mx-2"
-            >
-              Home
-            </Link>
-            <Link
-              to="signup"
-              className="text-copyPrimary hover:text-copySecondary mx-2"
-            >
-              SignUp
-            </Link>
-            <Link
-              to="signin"
-              className="text-copyPrimary hover:text-copySecondary mx-2"
-            >
-              Sign In
-            </Link>
+            <NavLinks />
             <NavDropdown
               title="Theme"
               id="navbarScrollingDropdown"
