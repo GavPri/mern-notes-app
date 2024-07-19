@@ -11,8 +11,11 @@ import { CiSun } from "react-icons/ci";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-cta">
-      <Container fluid className="flex justify-between items-center">
+    <Navbar
+      expand="lg"
+      className="bg-background border-b-2 border-border flex justify-between items-center"
+    >
+      <Container fluid>
         <Navbar.Brand href="#" className="text-copyPrimary">
           Notes App
         </Navbar.Brand>
@@ -35,9 +38,7 @@ const NavBar = () => {
               className="text-copyPrimary"
             >
               <NavDropdown.Item href="#action3">
-                <Button className="flex items-center justify-center h-[3/4] w-full">
-                  <CiSun size={40}/>
-                </Button>
+                <CiSun size={40} />
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
