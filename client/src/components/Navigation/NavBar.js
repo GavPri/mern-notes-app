@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // ---- React bootstrap imports
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -35,7 +35,39 @@ const NavLinks = () => {
     </>
   );
 };
+
+const HamburgerMenu = ({ handleHamburger, hamburgerIsOpen }) => {
+  return (
+    <div className={`w-8 aspect-square relative`} onClick={handleHamburger}>
+      <span
+        className={`absolute top-1 h-[3px] transition-all duration-500 ${
+          hamburgerIsOpen ? "w-0 " : "w-8  bg-cta rounded-lg"
+        }`}
+      ></span>
+      <span
+        className={`absolute w-full top-1/2 h-[3px] transition-all duration-500 bg-cta ${
+          hamburgerIsOpen ? "-rotate-45" : "rotate-0"
+        }`}
+      ></span>
+      <span
+        className={`absolute w-full top-1/2 h-[3px] transition-all duration-500 bg-cta ${
+          hamburgerIsOpen ? "rotate-45" : "rotate-0"
+        }`}
+      ></span>
+      <span
+        className={`absolute bottom-0 h-[3px] transition-all duration-500 ${
+          hamburgerIsOpen ? "w-0 " : "w-8  bg-cta rounded-lg"
+        }`}
+      ></span>
+    </div>
+  );
+};
 const NavBar = () => {
+  const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
+
+  const handleHamburger = () => {
+    setHamburgerIsOpen(!hamburgerIsOpen);
+  };
   return (
     <Navbar
       expand="lg"
@@ -45,8 +77,15 @@ const NavBar = () => {
         <Navbar.Brand href="#" className="text-copyPrimary">
           Notes App
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
+        <HamburgerMenu
+          handleHamburger={handleHamburger}
+          hamburgerIsOpen={hamburgerIsOpen}
+        />
+        <Navbar.Collapse
+          id="navbarScroll"
+          className={hamburgerIsOpen ? "show" : ""}
+        >
           <Nav
             className="me-auto my-2 my-lg-0 flex justify-between items-center"
             style={{ maxHeight: "100px" }}
