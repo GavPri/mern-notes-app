@@ -77,7 +77,6 @@ const NavBar = () => {
         <Navbar.Brand href="#" className="text-copyPrimary">
           Notes App
         </Navbar.Brand>
-        {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
         <HamburgerMenu
           handleHamburger={handleHamburger}
           hamburgerIsOpen={hamburgerIsOpen}
